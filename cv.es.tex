@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 2.0 (6/7/2019)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+% Vel (vel@LaTeXTemplates.com)
+%
+% Modified by:
+% José María Martín Luque (https://jmml.me)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article} % Default document font size
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\input{structure.tex} % Include the file specifying the document structure and styling
+
+% Set PDF meta-information
+\hypersetup{
+	pdftitle={José María Martín Luque - Curriculum vitae},
+	pdfauthor={José María Martín Luque}
+}
+
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{
+	\scriptsize
+	Última actualización: \today
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\pagestyle{fancy}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+{\LARGE\bfseries José María Martín Luque}
+\bigskip\bigskip\medskip
+
+\ifdefined\emailphone
+  \input{email-phone.es.tex}
+\fi
+Página web: \href{https://jmml.me}{jmml.me}\\
+Github: \href{https://github.com/jmml97}{@jmml97}\\
+LinkedIn: \href{https://linkedin.com/in/jmml97}{@jmml97}\\
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section*{Educación}
+
+\years{2015-2020} Grado en Ingeniería Informática, Universidad de Granada\\
+	{\color{gray}\itshape Enfocado en el desarrollo web y la administración de sistemas}\\
+
+\years{2015-2020} Grado en Matemáticas, Universidad de Granada\\
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section*{Proyectos y otras actividades}
+
+\years{2019-2020} Trabajo de fin de grado\\
+{\color{gray}El objetivo del trabajo era estudiar e implementar en SageMath el algoritmo de Peterson-Gorenstein-Zierler para códigos cíclicos sesgados. El texto y el código están disponibles en \href{https://github.com/jmml97/tfg}{GitHub}.}\\
+{\color{gray}\itshape — Calificado con matrícula de honor}\\
+
+\years{2018-2019} Director de Comunicación de la Delegación General de Estudiantes de la Universidad de Granada\\
+{\color{gray} Responsable del diseño y la ejecución de campañas de comunicación dirigidas a 47~000 estudiantes. A cargo también de las redes sociales y las relaciones con la prensa local.}\\
+
+Colaborador en \href{https://github.com/libreim/apuntesdgiim}{apuntesDGIIM}\\ 
+{\color{gray} Proyecto estudiantil dedicado a la creación de libros de texto gratuitos y de código abierto para asignaturas de Informática y Matemáticas.
+
+Además de colaborar en la elaboración de los textos, creé las plantillas utilizadas, además de la página web del proyecto, así como de su compilación y distribución.}\\
+
+Desarrollo web\\
+{\color{gray} He diseñado y desarrollado: \href{https://cielos.es}{cielos.es}, \href{https://herminialuque.com}{herminialuque.com} y mi \href{https://jmml.me}{página web personal}.}\\
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES & SKILLS
+%----------------------------------------------------------------------------------------
+\vspace{1cm}
+
+\begin{minipage}[t]{0.5\textwidth}
+	\section*{Idiomas}
+
+	\begin{tabular}{@{}ll}
+	\textsc{Castellano:} & Lengua materna\\
+
+	\textsc{Inglés:} & Fluido (B2)\\
+
+	\textsc{Francés:} & Básico\\
+	\end{tabular}\\
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+	\section*{Habilidades}
+
+	\begin{tabular}{@{}ll}
+	\textsc{Programación:} & C++, Python, Swift\\
+
+	\textsc{Desarrollo web:} & HTML, CSS, PHP, Javascript\\
+
+	\textsc{Otras:} & Docker, MySQL, \LaTeX\\
+
+	\end{tabular}\\
+\end{minipage}
+
+\end{document}

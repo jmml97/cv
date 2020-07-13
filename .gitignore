@@ -1,0 +1,13 @@
+email-phone.tex
+email-phone.es.tex
+cv-s.pdf
+cv-s.es.pdf
+
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+.DS_Store
